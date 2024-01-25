@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Ensuring we have nodejs
+if ! [ -x "$(command -v node)" ]; then
+  echo 'Error: node is not installed.' >&2
+  echo 'Please install nodejs and try again.'
+  exit 1
+fi
+
+# Collecting dependencies
+cd "baseapp" && npm install
+
+cd ..
+echo "You should be able to run bin/appetite now"
+echo ""
+echo "> Quickstart: you can create native apps by executing:"
+echo "cd bin && ./appetite"
+echo "> Follow the instructions and you will have the app ready in bin/appname"
+echo "> To launch the app, simply run the following command:"
+echo "cd bin/ && ./appname"
+echo ""
+echo "Enjoy!"

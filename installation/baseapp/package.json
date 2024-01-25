@@ -1,0 +1,22 @@
+{
+  "name": "appetite",
+  "version": "2.0.0",
+  "description": "Websites to Linux native apps!",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/tcsenpai/appetite",
+  "keywords": [
+  ],
+  "author": "tcsenpai",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^28.1.4",
+    "electron-builder": "^24.9.1"
+  },
+  "dependencies": {
+    "electron-store": "^8.1.0",
+    "fs": "^0.0.1-security"
+  }
+}

@@ -1,0 +1,4 @@
+#!/bin/bash 
+ cd ../baseapp/ 
+ URL=https://youtube.com 
+ echo { \"target_url\": \"$URL\" } > $HOME/.config/appetite/config.json && yarn start .

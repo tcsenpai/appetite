@@ -1,0 +1,23 @@
+#!/bin/bash
+cd ../baseapp
+
+# Input an url from the user
+echo "Enter the url of the website you want to save as a native app: "
+read url
+echo $url
+echo "Enter the app name:"
+read appname
+echo $appname created successfully.
+
+cp baselauncher tmp
+SCRIPT=$(cat tmp)
+HEADER="#!/bin/bash"
+CHDIR="cd ../baseapp/"
+PRESCRIPT="URL=$url"
+
+echo -e $HEADER "\n" $CHDIR "\n" $PRESCRIPT "\n" $SCRIPT > $appname
+chmod +x $appname
+
+mv $appname ../bin/
+cd ../bin/
+ls

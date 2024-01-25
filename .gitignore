@@ -1,8 +1,6 @@
-appero/node_modules/*
-appero/package-lock.json
-appero/yarn.lock
-appero/MACOSX*
-
+installation/baseapp/node_modules
+installation/baseapp/package-lock.json
+installation/baseapp/yarn.lock
+installation/baseapp/tmp
+.trunk
 .DS_Store
-
-appero/.installed
